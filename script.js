@@ -1,7 +1,7 @@
 const drawContainer = document.querySelector('.draw-container');
 
-let boxWidth = 38;
-let boxHeight = 42;
+let boxWidth = 55;
+let boxHeight = 55;
 
 for(let i = 0; i < (boxWidth * boxHeight); i++){
     const drawBox = document.createElement('div');

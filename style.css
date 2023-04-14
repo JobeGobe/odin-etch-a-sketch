@@ -3,14 +3,30 @@ body{
     padding: 0;
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 12, 60);
+}
+
+button{
+    background-color: rgb(40, 40, 40);
+    color: rgb(200, 200, 200);
+    font-size: 16px;
 }
 
 .main-container{
     display: flex;
     background-color: black;
-    padding: 8vh;
-    width: 75vh;
+    padding: 12px;
     height: auto;
+    gap: 10px;
+    border: 3px solid red;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
