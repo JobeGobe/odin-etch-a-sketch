@@ -1,7 +1,7 @@
 const drawContainer = document.querySelector('.draw-container');
 
-let boxWidth = 20;
-let boxHeight = 16;
+let boxWidth = 38;
+let boxHeight = 42;
 
 for(let i = 0; i < (boxWidth * boxHeight); i++){
     const drawBox = document.createElement('div');
@@ -13,5 +13,7 @@ for(let i = 0; i < (boxWidth * boxHeight); i++){
 console.log(drawContainer.style.width)
 
 drawContainer.addEventListener('mouseover', (e)=> {
-    e.target.classList.add('drawn');
+    if(e.target.className === 'draw-pixel'){
+        e.target.classList.add('drawn');
+    }
 })
